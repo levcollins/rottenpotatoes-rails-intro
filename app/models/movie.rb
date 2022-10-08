@@ -1,5 +1,9 @@
 class Movie < ActiveRecord::Base
   def self.with_ratings(ratings_list)
-    ratings_list.include? self.rating
+    return Movie.where(rating: ratings_list) 
+  end
+
+  def self.all_ratings
+    ['G','PG','PG-13','R']
   end
 end

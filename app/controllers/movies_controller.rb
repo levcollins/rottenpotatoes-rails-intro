@@ -7,11 +7,8 @@ class MoviesController < ApplicationController
   end
 
   def index
-    if params[:ratings] == nil
-      params[:ratings] = session[:ratings]
-    end
-    if params[:sort] == nil
-      params[:sort] = session[:sort]
+    if params[:ratings] == nil and params[:sort] == nil
+      redirect_to :sort => session[:sort], :ratings => session[:ratings]
     end
     @all_ratings = Movie.all_ratings
     if params[:ratings].present?
@@ -36,6 +33,7 @@ class MoviesController < ApplicationController
   end
 
   def new
+    session.clear
     # default: render 'new' template
   end
 

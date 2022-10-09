@@ -7,14 +7,22 @@ class MoviesController < ApplicationController
   end
 
   def index
+    if params[:ratings] == nil
+      params[:ratings] = session[:ratings]
+    end
+    if params[:sort] == nil
+      params[:sort] = session[:sort]
+    end
     @all_ratings = Movie.all_ratings
     if params[:ratings].present?
+      session[:ratings] = params[:ratings]
       @ratings_to_show = params[:ratings].keys
     else
       @ratings_to_show = @all_ratings
     end
 
     if params[:sort].present?
+      session[:sort] = params[:sort]
       if params[:sort].keys[0] == "title"
         @title_highlight = "hilite bg-warning"
       else 

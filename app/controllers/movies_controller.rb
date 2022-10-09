@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    if params[:ratings] == nil and params[:sort] == nil
+    if params[:ratings] == nil and params[:sort] == nil and session[:sort] != nil
       redirect_to :sort => session[:sort], :ratings => session[:ratings]
     end
     @all_ratings = Movie.all_ratings

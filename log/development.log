@@ -3525,3 +3525,751 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.erb within layouts/application (9.7ms)
   Rendered layouts/_flash.erb (0.1ms)
 Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:25:54 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:25:54 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "sort"=>{"title"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_flash.erb (0.5ms)
+Completed 200 OK in 239ms (Views: 237.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:25:57 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:25:59 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:03 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:03 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>{"title"=>"1"}}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:08 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')
+  Rendered movies/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:10 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:11 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:16 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:18 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:18 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "sort"=>{"title"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_flash.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:59 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:26:59 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "sort"=>{"title"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 210ms (Views: 208.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:27:58 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `Clear' for #<ActionDispatch::Request::Session:0x00007f18e48b0138>):
+  app/controllers/movies_controller.rb:12:in `index'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:28:51 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&sort%5Btitle%5D=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:28:51 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "sort"=>{"title"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 201ms (Views: 200.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:28:53 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:31:10 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/codio/workspace/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:72: syntax error, unexpected end-of-input, expecting end):
+  app/controllers/movies_controller.rb:72: syntax error, unexpected end-of-input, expecting end
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:31:45 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1
+Redirected to 
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:32:52 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1
+Redirected to 
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:33:01 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1
+Redirected to 
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:35:02 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1
+Redirected to 
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:36:39 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/codio/workspace/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:11: syntax error, unexpected return, expecting end
+...gs] => session[:ratings] return 
+...                         ^~~~~~
+/home/codio/workspace/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:14: syntax error, unexpected return, expecting end
+...:sort] => session[:sort] return 
+...                         ^~~~~~):
+  app/controllers/movies_controller.rb:11: syntax error, unexpected return, expecting end
+  app/controllers/movies_controller.rb:14: syntax error, unexpected return, expecting end
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.7ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:26 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:27 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:27 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:28 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:28 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:28 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:28 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:29 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:29 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:29 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:29 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:30 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:30 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:30 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:30 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:31 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:31 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:31 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:31 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:32 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:37 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:37 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:37 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:37 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:38 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?G=1&PG=1&R=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:37:38 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G"=>"1", "PG"=>"1", "R"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:26 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?G=1&PG=1&R=1
+Redirected to 
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:12:in `index'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:55 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:55 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:55 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:56 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:56 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:56 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:56 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:56 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:57 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:57 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:57 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:57 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:57 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:58 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:58 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:58 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:58 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:58 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:59 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:38:59 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?title=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:39:01 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"title"=>"1"}
+Redirected to https://calibresheriff-eclipsezodiac-3000.codio.io/?title=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:10 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/codio/workspace/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:72: syntax error, unexpected end-of-input, expecting end):
+  app/controllers/movies_controller.rb:72: syntax error, unexpected end-of-input, expecting end
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:30 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 231ms (Views: 220.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:32 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:34 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (1.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort%5Brelease_date%5D=1" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:37 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>{"release_date"=>"1"}}
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY release_date[0m
+  Rendered movies/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:39 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY release_date
+  Rendered movies/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for 2601:644:400:700:6963:6470:f08e:d877 at 2022-10-09 06:40:44 +0000
+Cannot render console from 2601:644:400:700:6963:6470:f08e:d877! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')  ORDER BY release_date[0m
+  Rendered movies/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
